@@ -49,20 +49,20 @@
 /MindVector/*.VC.db
 
 # Unity3D generated meta files
-*.pidb.meta
-*.pdb.meta
-*.mdb.meta
+/MindVector/*.pidb.meta
+/MindVector/*.pdb.meta
+/MindVector/*.mdb.meta
 
 # Unity3D generated file on crash reports
-sysinfo.txt
+/MindVector/sysinfo.txt
 
 # Builds
-*.apk
-*.aab
-*.unitypackage
+/MindVector/*.apk
+/MindVector/*.aab
+/MindVector/*.unitypackage
 
 # Crashlytics generated file
-crashlytics-build.properties
+/MindVector/crashlytics-build.properties
 
 # Packed Addressables
 /MindVector/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
