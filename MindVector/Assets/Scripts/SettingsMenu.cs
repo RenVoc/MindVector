@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class OptionsMenu : MonoBehaviour
+public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer AudioMixer;
     Resolution[] resolutions;
-    public TMP_Dropdown ResolutionDropdown;
+    public Dropdown ResolutionDropdown;
 
 
     private void Start()
