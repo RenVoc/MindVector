@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public int level = 1;
 
-    void Start() {
-
-    }
-
-    public void Update() {
-
+    public void ChangeLevel (int amount)
+    {
+        level += amount;
     }
 }
