@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     public void startFunction()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("FirstChapt");
     }
     public void QuitGame()
     {
