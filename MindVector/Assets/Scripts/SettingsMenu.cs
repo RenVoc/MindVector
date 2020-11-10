@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer AudioMixer;
+    private bool isMuted;
 
     public void SetVolume(float volume)
     {
@@ -16,6 +16,16 @@ public class SettingsMenu : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+    }
+
+    private void Start()
+    {
+        isMuted = false;
+    }
+
+    public void MutePress() {
+        isMuted = !isMuted;
+        AudioListener.pause = isMuted;
     }
 }
 
