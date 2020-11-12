@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public string loadLevel;
+    public GameObject loadingScreen;
+
     public void startFunction()
     {
         SceneManager.LoadScene("FirstChapt");
@@ -14,20 +16,10 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
-    public void History()
+
+    public void Load()
     {
-        SceneManager.LoadScene("History");
-    }
-    public void Achievement()
-    {
-        SceneManager.LoadScene("Achievement"); 
-    }
-    public void Settings()
-    {
-        SceneManager.LoadScene("Settings");
-    }
-    public void Authors()
-    {
-        SceneManager.LoadScene("Authors");
+        loadingScreen.SetActive(true);
+        SceneManager.LoadScene(loadLevel);
     }
 }
